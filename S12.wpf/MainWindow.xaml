@@ -1,0 +1,49 @@
+﻿<Window x:Class="S12.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:S12.wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#000000">
+    <StackPanel>
+        <Label Foreground="#FFFFFF">First Name :</Label>
+        <TextBox Name = "tbfname" Foreground="#FFFFFF" Background="#000000"  Text = "{Binding fname}"/>
+        <Label Foreground="#FFFFFF">Last Name :</Label>
+        <TextBox Name = "tblname" Foreground="#FFFFFF" Background="#000000" Text = "{Binding lname}"/>
+        <Label Foreground="#FFFFFF">Number :</Label>
+        <TextBox Name = "tbnumber" Foreground="#FFFFFF" Background="#000000" Text = "{Binding number}"/>
+        <Label Foreground="#FFFFFF">Email :</Label>
+        <TextBox Name = "tbemail" Foreground="#FFFFFF" Background="#000000" Text = "{Binding email}"/>
+        <Label Foreground="#FFFFFF">State :</Label>
+        <TextBox Name = "user_state" Foreground="#FFFFFF" Background="#000000" Text = "{Binding state}"/>
+        <Label Foreground="#FFFFFF">Town :</Label>
+        <TextBox Name = "user_town" Foreground="#FFFFFF" Background="#000000" Text = "{Binding town}"/>
+        <Label Foreground="#FFFFFF">Street :</Label>
+        <TextBox Name = "user_street" Foreground="#FFFFFF" Background="#000000" Text = "{Binding street}"/>
+        <Button Click="Add_onClick"  Background="Green" >Add</Button>
+        <Button Click="Delete_onClick"  Background="Red">Delete</Button>
+        <Label Foreground="#FFFFFF">First Name to Search:</Label>
+        <TextBox Name = "tbfnametf" Foreground="#FFFFFF" Background="#000000"  Text = "{Binding fname_tofind}"/>
+        <Label Foreground="#FFFFFF">Last Name to Search:</Label>
+        <TextBox Name = "tblnametf" Foreground="#FFFFFF" Background="#000000" Text = "{Binding lname_tofind}"/>
+        <Button Click="Find_onClick"  Background="yellow">Find</Button>
+        <ListBox Name="lbNames" ItemsSource = "{Binding Contacts}" Height="150" SelectedIndex = "{Binding Selected_Index}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBox Text="{Binding Person_Name.FirstName, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Name.LastName, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Number, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Email, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Address.State, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Address.Town, Mode = TwoWay}" />
+                        <TextBox Text="{Binding Person_Address.Street, Mode = TwoWay}" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <!-- the Name & Address returned from Person in Data Grid are returned by ToString() -->
+        <DataGrid Name="dgContacts" ItemsSource="{Binding}"/> 
+    </StackPanel>
+</Window>

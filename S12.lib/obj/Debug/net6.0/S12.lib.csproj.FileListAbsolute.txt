@@ -1,0 +1,12 @@
+c:\git\AP00012\S12\S12.lib\bin\Debug\net6.0\S12.lib.deps.json
+c:\git\AP00012\S12\S12.lib\bin\Debug\net6.0\S12.lib.dll
+c:\git\AP00012\S12\S12.lib\bin\Debug\net6.0\ref\S12.lib.dll
+c:\git\AP00012\S12\S12.lib\bin\Debug\net6.0\S12.lib.pdb
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.csproj.AssemblyReference.cache
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.GeneratedMSBuildEditorConfig.editorconfig
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.AssemblyInfoInputs.cache
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.AssemblyInfo.cs
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.csproj.CoreCompileInputs.cache
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.dll
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\ref\S12.lib.dll
+c:\git\AP00012\S12\S12.lib\obj\Debug\net6.0\S12.lib.pdb
